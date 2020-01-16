@@ -1,0 +1,6 @@
+(define (square a) (* a a))
+(define (sumOfTwoSquares a b) (+ (square a) (square b)))
+(define (sumOfLargerTwo x y z) 
+	(cond ((> x y) (if (> y z) (sumOfTwoSquares x y) (sumOfTwoSquares x z)))
+	(else (if (> x z) (sumOfTwoSqaures x y) (sumOfTwoSquares z y)))))
+(sumOfLargerTwo 3 2 1)
